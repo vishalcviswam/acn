@@ -1,0 +1,18 @@
+sudo su
+yum -update -y
+yum install docker -y
+which docker
+service docker start
+service docker status
+docker images
+docker pull ubuntu
+docker images
+docker run -it --name vishaluthraja nginx bin/bash
+docker start vishaluthraja
+docker attach vishaluthraja
+docker commit vishaluthraja heyboy
+docker tag heyboy vishalcviswam/newtryexam
+docker login
+docker push vishalcviswam/newtryexam
+docker pull vishalcviswam/newtryexam
+
